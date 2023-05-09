@@ -6,11 +6,13 @@ import InnerHeader from './innerHeader';
 export const TabIds = {
     HOME: 'home',
     PRODUCTS: 'products',
+    SHIPPING: 'shipping',
 };
 
 export const TabRoutes = {
     [TabIds.HOME]: '/',
     [TabIds.PRODUCTS]: '/products',
+    [TabIds.SHIPPING]: '/shipping',
 };
 
 const HeaderlessRoutes = [
@@ -61,6 +63,7 @@ const Header = () => {
     const items = [
         { ariaControls: 'home', id: TabIds.HOME, title: 'Home' },
         { ariaControls: 'products', id: TabIds.PRODUCTS, title: 'Products' },
+        { ariaControls: 'shipping', id: TabIds.SHIPPING, title: 'Shipping rates' },
     ];
 
     const handleTabClick = (tabId: string) => {
