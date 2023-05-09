@@ -1,9 +1,9 @@
+import { Panel, Text } from '@bigcommerce/big-design'
 import { useRouter } from 'next/router';
-import { Panel, Text, Flex, H1 } from '@bigcommerce/big-design'
+
 
 const ShippingPage = () => {
     const router = useRouter();
-
     return (
         <>
             <Panel header="Shipping rates">
