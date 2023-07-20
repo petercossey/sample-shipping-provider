@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function rate(req: NextApiRequest, res: NextApiResponse) {
+    console.log(req.body);
+    console.log(req.headers);
     try {
         // WIP - hardcoded response for the moment.
         res.status(200).json({
