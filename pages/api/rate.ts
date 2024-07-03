@@ -9,23 +9,32 @@ export default async function rate(req: NextApiRequest, res: NextApiResponse) {
     try {
         // WIP - hardcoded response for the moment.
         res.status(200).json({
-            quote_id: 'sample_shipping_provider',
-            messages: [{
-                text: 'Hello from Sample Shipping Provider',
-                type: 'INFO'
-            }],
+            quote_id: "xyzsample_shipping_provider",
+            messages: [
+                {
+                    text: "Hello from Sample Shipping Provider",
+                    type: "INFO"
+                }
+            ],
             carrier_quotes: [
                 {
                     quotes: [
                         {
-                            code: 'SAMP',
-                            display_name: 'Sample Express',
+                            code: "SAMP",
+                            display_name: "Sample Express",
                             cost: {
-                                currency: 'AUD',
+                                currency: "AUD",
                                 amount: 9.99
-                            }
+                            },
+                            messages: null,
+                            description: null,
+                            rate_id: null,
+                            discounted_cost: null,
+                            dispatch_date: null,
+                            transit_time: null
                         }
-                    ]
+                    ],
+                    carrier_info: null
                 }
             ]
         });
