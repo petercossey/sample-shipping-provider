@@ -23,18 +23,11 @@ export default async function rate(req: NextApiRequest, res: NextApiResponse) {
                             code: "SAMP",
                             display_name: "Sample Express",
                             cost: {
-                                currency: "AUD",
+                                currency: "USD",
                                 amount: 9.99
-                            },
-                            messages: null,
-                            description: null,
-                            rate_id: null,
-                            discounted_cost: null,
-                            dispatch_date: null,
-                            transit_time: null
+                            }
                         }
-                    ],
-                    carrier_info: null
+                    ]
                 }
             ]
         });
