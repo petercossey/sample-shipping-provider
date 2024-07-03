@@ -20,11 +20,19 @@ export default async function rate(req: NextApiRequest, res: NextApiResponse) {
                 {
                     quotes: [
                         {
-                            code: "SAMP",
-                            display_name: "Sample Express",
+                            code: "SAMP01",
+                            display_name: "Sample Express Option 1",
                             cost: {
                                 currency: "USD",
                                 amount: 9.99
+                            }
+                        },
+                        {
+                            code: "SAMP02",
+                            display_name: "Sample Express Option 2",
+                            cost: {
+                                currency: "USD",
+                                amount: 19.99
                             }
                         }
                     ]
