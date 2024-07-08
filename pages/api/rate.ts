@@ -6,7 +6,11 @@ export default async function rate(req: NextApiRequest, res: NextApiResponse) {
     // console.log(req.body.base_options.customer);
     // console.log(req.body.base_options.request_context);
     // console.log(req.headers);
-    console.log(req.body.base_options.items.attributes);
+    if (req.body.base_options.items) {
+        array.forEach(item => {
+            console.log(item.attributes);
+        });
+    }
     try {
         // WIP - hardcoded response for the moment.
         res.status(200).json({
