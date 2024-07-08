@@ -1,11 +1,12 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function rate(req: NextApiRequest, res: NextApiResponse) {
-    console.log(req.body);
-    console.log(req.body.base_options.items);
-    console.log(req.body.base_options.customer);
-    console.log(req.body.base_options.request_context);
-    console.log(req.headers);
+    // console.log(req.body);
+    // console.log(req.body.base_options.items);
+    // console.log(req.body.base_options.customer);
+    // console.log(req.body.base_options.request_context);
+    // console.log(req.headers);
+    console.log(req.body.base_options.items.attributes);
     try {
         // WIP - hardcoded response for the moment.
         res.status(200).json({
